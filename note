@@ -1,0 +1,35 @@
+// ---Define the SQL statement to create a table
+// const createTableQuery = `
+//     CREATE TABLE IF NOT EXISTS users (
+//         id INTEGER PRIMARY KEY,
+//         name TEXT,
+//         age INTEGER
+//     )
+// `;
+
+//---checking the connection
+// Execute the SQL statement to create the table
+// try {
+//     db.exec(createTableQuery);
+//     console.log('Table created successfully.');
+// } catch (error) {
+//     console.error('Error creating table:', error.message);
+// }
+
+
+//---Define the SQL statement to insert data into the table
+// const insertDataQuery = `
+//     INSERT INTO USERS (id, name, age)
+//     VALUES (?, ?, ?)
+// `;
+
+// ---Data to be inserted
+// const data = ['1', 'mala', '23'];
+
+//---Execute the SQL statement to insert data into the table and through error
+// try {
+//     db.prepare(insertDataQuery).run(data);
+//     console.log('Data inserted successfully.');
+// } catch (error) {
+//     console.error('Error inserting data:', error.message);
+// } 

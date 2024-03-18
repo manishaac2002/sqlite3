@@ -1,3 +1,6 @@
+//here some specific code for creating a table and inserting.
+
+
 // ---Define the SQL statement to create a table
 // const createTableQuery = `
 //     CREATE TABLE IF NOT EXISTS users (

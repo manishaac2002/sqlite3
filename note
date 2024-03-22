@@ -1,4 +1,19 @@
-//here some specific code for creating a table and inserting.
+// ----This is documents is for installation process
+// SQLite3 installation process
+// https://www.sqlite.org/download.html using this link, we can install sqlite3 for windows, it changes according to your
+// OS check through it.
+
+//----After installation
+// 3 file will be downloaded and extract all the files and save in one new folder and put it in C drive.
+// Reference video - https://www.youtube.com/watch?v=L3FwRRx6bqo&pp=ygUIc3FsaXRlMyA%3D
+
+//----How to use this(using methods)
+// We can work on command prompt and it is not easy to use instead we can use SQLite studio editor.
+// To install that https://sqlitestudio.pl/ using this download
+// Reference video - https://www.youtube.com/watch?v=DPgb7aa5bYs&t=232s&pp=ygUIc3FsaXRlMyA%3D
+
+
+//----------here some specific code for creating a table and inserting---------
 
 // ---Define the SQL statement to create a table
 // const createTableQuery = `

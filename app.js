@@ -1,23 +1,16 @@
-import Database from 'better-sqlite3'
+import express from 'express';
+import sqlite3 from './db.js';
 
-// Path to your SQLite database file
-const dbPath = './store.db';
+const application =express()
 
-// Attempt to connect to the database
-let db
-try {
-  db = new Database(dbPath);
-  console.log('Connected to the database successfully.');
-} catch (error) {
-  console.error('Error connecting to the database:', error.message);
-  // Handle the error accordingly, e.g., exiting the application
-  process.exit(1);
-}
+application.use(express.json());
 
-// Close the database connection
-try {
-  db.close();
-  console.log('Database connection closed.');
-} catch (error) {
-  console.error('Error closing the database connection:', error.message);
-}
+const port =4000
+// Start the server
+  application.listen(port,
+    async () => {
+    console.log(`🎯 Server is Running on ${port}`)
+    await sqlite3.dbConnection()
+  }) 
+
+  

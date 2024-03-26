@@ -1,4 +1,4 @@
-import dbModel from "./db.js";
+import dbModel from "./CURD.model.js";
 
 const testService = async (request) => {
   const data = request.body

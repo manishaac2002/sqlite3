@@ -50,3 +50,30 @@
 // } catch (error) {
 //     console.error('Error inserting data:', error.message);
 // } 
+
+// import database from "better-sqlite3";
+
+// // Define a global variable to hold the database connection
+// let db;
+
+// const dbConnection = async () => {
+//   const dbPath = '../../memory.db'
+
+//   if (!dbPath || typeof dbPath !== 'string' || dbPath.trim() === '') {
+//     console.error('Invalid or empty database path provided.');
+//     process.exit(1);
+//   } else {
+//     try {
+//       db = new database(dbPath);
+//       console.log('🟢 Connected to the database successfully...!');
+//     } catch (error) {
+//       console.error('🔴 Error connecting to the database:', error.message);
+//       // Handle the error accordingly, e.g., exiting the application
+//       process.exit(1);
+//     }
+//     return db;
+//   }
+// }
+
+
+// export default { dbConnection, db };

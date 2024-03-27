@@ -1,7 +1,5 @@
 import sqlite3 from "./db.js";
 
-let db;
-
 const insertQuery = async (data) => { // Accept data as a parameter
   // ---Define the SQL statement to insert data into the table
   const insertDataQuery = `
